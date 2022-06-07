@@ -1,0 +1,289 @@
+:root{
+    --clr-text:#3d3d3d;
+    --clr-primary:#067E0A;
+    --clr-accent:#764981;
+
+    --ff-title: "BetterFly", sans-serif ;
+    --ff-serif:"Crimson Pro",serif;
+    --ff-logo:  "Crimson Pro", sans-serif;
+  }
+
+
+* ,
+*::before,
+*::after{
+  box-sizing:inherit;
+}
+
+html{
+    box-sizing:border-box;
+    font-family:var(--ff-serif);
+    color: var(--clr-text);
+    font-size: 1.125rem;
+    background-color: wheat;
+  }
+  body{
+    margin: 0;
+    text-align: center;
+  }
+
+  /* typogrphy 8*/ 
+  h1 , h2 , h3 , h4 , p {
+    margin: 0;
+
+
+  } 
+  
+
+  h2,
+  h3{
+  font-family:var(--ff-title);
+  line-height:0.8;
+  letter-spacing: 3px;
+}
+
+h2{
+  size: 4rem;
+}
+
+p{
+  margin-bottom: 0.85em ;
+
+}
+
+.text-primary{
+  color: var(--clr-primary);
+  font-family: var(--ff-title);
+}
+
+.section-title-small{
+font-size: 5em;
+font-family: var(--ff-serif);
+
+}
+
+img{
+  max-width: 100%;
+  display: block;
+  height: 40vh;
+}
+
+section{
+  padding: 3em 1em;
+}
+
+.logo{
+  font-family: var(--ff-title);
+  text-align: center;
+
+}
+
+.logo a {
+  text-decoration: none;
+  color: black;
+}
+
+header{
+  padding: 1em 0 2em;
+  
+}
+/* navigation */
+
+nav ul{
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content: space-around;
+}
+
+nav a {
+  display: inline-block;
+  color: var(--clr-primary);
+  text-decoration: none;
+}
+
+/* nav a:hover,
+nav a:focus{
+  color: var(--clr-accent);
+  text-decoration: underline;
+}
+
+
+
+/* buttons*/
+/*Homepage styles*/
+.hero{
+background-color:#222;
+background-image:url(./photos/Hippie-Chick-Monkey.jpg);
+background-blend-mode: multiply;
+color:white;
+text-align:center;
+padding: 15vh 1em;
+background-repeat: no-repeat;
+background-attachment: fixed;
+height: 60vh;
+}
+
+.intro{
+text-align: center;
+
+}
+.about-us{
+background-color: var(--clr-accent);
+display: flex;
+flex-direction: column;
+color: wheat;
+font-family: var(--ff-serif);
+background-color:#541e61;
+letter-spacing: 1px;
+
+}
+
+.about-us__intro{
+  
+  color: green;
+  background-image: url(/photos/granola-1920x1080-c-default.jpg);
+  background-repeat: no-repeat;
+  background-color: #222;
+  padding: 2em 1em 1em;
+  background-blend-mode: multiply;
+  
+  overflow: auto;
+  
+  
+}
+
+.about-us__body{
+  padding: 1.5em 1em ;
+  display: flex;
+  
+
+}
+
+.btn{
+  padding:.75em 2.5em  ;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0.2em;
+  border-radius: 0.25em;
+}
+
+.btn-primary{
+  background-color: var(--clr-accent);
+}
+
+
+.products{
+  display: flex;
+  flex-direction: row;
+
+
+
+
+}
+
+.product{
+  display: flex;
+  flex-direction: column;
+  margin: 1vw;
+  border-radius: 1em;
+  background-color: whitesmoke;
+}
+
+.product h3{
+  font-family: var(--ff-serif);
+}
+
+.copyright{
+  display: flex;
+  justify-content: center;
+  
+}
+.copy{
+  margin-right: 3vw;
+}
+.icon{
+  margin: 0 1vw;
+}
+
+span a{
+  text-decoration: none;
+  color: black;
+}
+footer span{
+  color: black;
+}
+
+.menu1 li{
+
+  display: inline-block;
+  
+height: 100%;
+font-size: 20px;
+position: relative;
+display: flex;
+align-items: center;
+justify-content: center;
+color: blue;
+text-transform:capitalize;
+text-shadow: 0 0 15px #8e54e9;
+transition: all 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
+text-align: center;
+padding: 0 10px;
+
+
+}
+
+.menu1 li:after,
+.menu1 li:before {
+content: "";
+position: absolute;
+display: block;
+border: 0px solid transparent;
+width: 0%;
+height: 0%;
+transition: all 0.2s ease;
+}
+
+.menu1 li:after {
+width: 0%;
+height: 0%;
+top: 0;
+left: 0;
+border-top: 2px solid transparent;
+border-left: 2px solid transparent;
+}
+
+.menu1 li:before {
+width: 0%;
+height: 0%;
+right: 0;
+bottom: 0;
+border-bottom: 2px solid transparent;
+border-right: 2px solid transparent;
+}
+
+.menu1 li:hover::before,
+.menu1 li:hover::after {
+width: 10px;
+height: 10px;
+border-color: red;
+}
+
+.sugar{
+  color: var(--clr-primary);
+  font-family: var(--ff-serif);
+}
+
+
+
+
+@media screen  and (max-width : 500px){
+  .products{
+    display: flex;
+    flex-direction: column;
+  }
+  
+}
